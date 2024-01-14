@@ -1,0 +1,32 @@
+.Filter {
+    display: flex;
+    gap: 1rem;
+
+    margin: 1rem 0;
+}
+
+.FilterBox {
+    cursor: pointer;
+    padding: 1rem 3rem;
+    border-radius: 15px;
+
+    background-color: #dadada;
+}
+
+.FilterBox:hover {
+    background-color: var(--main-orange);
+}
+
+.FilterBox span {
+    font-size: 1.4rem;
+}
+
+.FilterBox.active {
+    background-color: var(--main-orange);
+}
+
+@media (max-width: 764px) {
+    .Filter {
+        display: none;
+    }
+}

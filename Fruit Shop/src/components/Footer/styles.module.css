@@ -1,0 +1,193 @@
+.Footer {
+    display: flex;
+    flex-direction: column;
+
+    background-color: #45595B;
+    padding: 3rem 8rem 3rem 8rem;
+}
+
+.Footer .top-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+    padding: 3rem 0;
+    border: 1px solid var(--main-orange);
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}
+
+.Footer .top-section .title {
+    display: block;
+    text-align: start;
+}
+
+.Footer .top-section .title h1 {
+    font-size: 3.2rem;
+    color: var(--main-green);
+    margin: 0;
+}
+
+.Footer .top-section .title span {
+    color: var(--main-orange);
+    font-size: 1.6rem;
+}
+
+.Footer .top-section .email-ctn {
+    display: flex;
+    align-items: center;
+
+    height: 50px;
+    border-radius: 30px;
+    overflow: hidden;
+    background-color: white;
+}
+
+.Footer .top-section .email-ctn input {
+    flex: 1;
+
+    height: 100%;
+    margin: 0;
+    border: 0;
+
+    padding: 0 2rem;
+    outline: 0;
+    border: 1px solid transparent;
+}
+
+.Footer .top-section .email-ctn:focus-within {
+    border: 2px solid #547446;
+}
+
+.Footer .top-section .email-ctn button {
+    display: flex;
+    align-items: center;
+    flex: 1;
+
+    height: 100%;
+    margin: 0;
+    border: 0;
+    border-radius: 30px;
+
+    font-size: 1.4rem;
+    color: white;
+    background-color: var(--main-green);
+}
+
+.Footer .top-section .social-medias {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.Footer .top-section .social-medias .icon-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--main-orange);
+    border-radius: 100vh;
+}
+
+.Footer .top-section .social-medias .icon {
+    width: 15px;
+    height: 15px;
+    fill: var(--main-orange);
+
+}
+
+
+.Footer .middle-section {
+    text-align: start;
+    color: white;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    padding: 4rem 0;
+}
+
+.Footer .middle-section .column {
+    display: flex;
+    flex-direction: column;
+}
+
+.Footer .middle-section .column h2 {
+    margin: 0;
+    font-size: 2.4rem;
+}
+
+.Footer .middle-section .column a,
+.Footer .middle-section .column span,
+.Footer .middle-section .column p {
+    color: #A2ACA0;
+    font-size: 1.6rem;
+}
+
+.Footer .middle-section .column a:hover {
+    color: var(--main-orange);
+}
+
+.Footer .middle-section .payments img {
+    width: 200px;
+}
+
+.Footer .readmore-btn {
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+
+    align-self: flex-end;
+
+    font-weight: 400;
+    width: fit-content;
+}
+
+@media (max-width: 840px) {
+    .Footer .middle-section {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 580px) {
+    .Footer .middle-section {
+        grid-template-columns: 1fr;
+    }
+}
+
+.Footer .bottom-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    font-size: 1.4rem;
+    color: white;
+}
+
+.Footer .bottom-section a {
+    color: var(--main-green);
+}
+
+.Footer .bottom-section div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.Footer .bottom-section .icon {
+    width: 20px;
+    height: 20px;
+    fill: white;
+}
+
+@media (max-width: 788px) {
+    .Footer .bottom-section {
+        justify-content: center;
+    }
+}

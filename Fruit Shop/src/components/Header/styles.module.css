@@ -1,0 +1,22 @@
+.Header {
+    position: sticky;
+    top: 0;
+    
+    width: 100%;
+    background-color: white;
+    
+    transition: all 1s ease;
+    z-index: 10;
+}
+
+.hide {
+    transform: translateY(-50px);
+
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+
+@media (max-width: 768px) {
+    .hide {
+        transform: translateY(0);
+    }
+}

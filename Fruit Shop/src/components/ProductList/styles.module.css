@@ -1,0 +1,24 @@
+.ProductList {
+    display: flex;
+    flex-direction: column;
+
+    text-align: start;
+}
+
+.ProductList h2 {
+    font-size: 3rem;
+}
+
+.ProductList .list-ctn {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+
+    gap: 3rem;
+    padding: 2rem 0;
+}
+
+@media (max-width: 688px) {
+    .list-ctn {
+        justify-items: center;
+    }
+}

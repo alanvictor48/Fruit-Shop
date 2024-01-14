@@ -1,0 +1,144 @@
+.CartModal {
+    display: flex;
+    flex-direction: column;
+
+    position: absolute;
+    top: 0; right: 0;
+
+    padding: 2rem 3rem;
+    height: 100vh;
+    width: 380px;
+
+    background-color: white;
+}
+
+.CartModal > header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+
+    border: 1px solid var(--main-green);
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}
+
+.CartModal > header > h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.CartModal > header > .icon {
+    cursor: pointer;
+    fill: #707070;
+    width: 20px;
+}
+
+.CartModal .product-list {
+    flex: 1;
+}
+
+.CartProduct {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 2.5fr) 1.5fr;
+    column-gap: 1rem;
+
+    padding: 1rem 0;
+    width: 100%;
+}
+
+.CartProduct .img-ctn {
+    display: flex;
+    align-items: center;
+    aspect-ratio: 1;
+    flex: 1;
+    align-self: center;
+}
+
+.CartProduct .img-ctn img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.CartProduct .details {
+    display: flex;
+    flex-direction: column;
+
+    text-align: start;
+    padding: 0 1rem;
+}
+
+.CartProduct .details .name {
+    display: inline-block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.CartProduct .details .description {
+    font-size: 1.4rem;
+    flex: 1;
+
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.CartProduct .value {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    flex: 1;
+}
+
+.CartProduct .value input {
+    width: 50px;
+}
+
+.CartProduct .value .price {
+    display: inline-block;
+    white-space: nowrap;
+
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.CartModal > footer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.CartModal > footer .total-price-ctn {
+    display: flex;
+    justify-content: space-between;
+
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.continue-btn {
+    display: flex;
+    justify-content: center;
+
+    color: white;
+    background-color: var(--main-green);
+    border: 1px solid var(--main-green);
+    
+    padding: 1rem 0;
+    font-size: 1.4rem;
+}
+
+.continue-btn:hover {
+    background-color: white;
+    color: var(--main-green);
+    border: 1px solid var(--main-green);
+}

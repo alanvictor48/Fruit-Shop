@@ -1,0 +1,24 @@
+.SideMenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 11;
+
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+
+    padding: 1rem 0;
+    background-color: rgb(255, 255, 255);
+}
+
+.SideMenu header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem;
+}
+
+.SideMenu header .icon {
+    cursor: pointer;
+}

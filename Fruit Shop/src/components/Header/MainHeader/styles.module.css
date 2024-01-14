@@ -1,0 +1,113 @@
+.MainHeader {
+    padding: 0 8rem;
+    z-index: 10;
+    background-color: white;
+    color: rgba(0,0,0,.55);
+    min-height: 90px;
+}
+
+.MainHeader nav {
+    display: flex;
+    align-items: center;
+}
+
+.MainHeader nav > h1 {
+    /* font-size: ; */
+    color: var(--main-green);
+}
+
+.MainHeader .secondary-nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+}
+
+.MainHeader .secondary-nav .burguer {
+    display: none;
+}
+
+.MainHeader .secondary-nav .links {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin: 0 auto;
+}
+
+.MainHeader .secondary-nav a {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    color: inherit;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.MainHeader .secondary-nav a:hover {
+    color: var(--main-green);
+}
+
+.MainHeader .secondary-nav .icons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.MainHeader .secondary-nav .icon {
+    cursor: pointer;
+    fill: var(--main-green);
+
+    width: 35px;
+    height: 35px;
+
+    transition: scale .3s ease;
+}
+
+.MainHeader .secondary-nav .icon:hover {
+    scale: 1.05;
+}
+
+.CartIcon {
+    position: relative;
+}
+
+.CartIcon .icon {
+    cursor: pointer;
+}
+
+.CartIcon .circle {
+    position: absolute;
+    right: -5px;
+    top: -5px;
+
+    z-index: 5;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10px;
+    height: 10px;
+    border-radius: 100vh;
+    padding: 10px;
+
+    color: white;
+    background-color: var(--main-orange);
+}
+
+
+@media (max-width: 1024px) {
+    .MainHeader .secondary-nav .burguer {
+        display: block;
+    }
+
+    .MainHeader .secondary-nav .links,
+    .MainHeader .secondary-nav .icons {
+        display: none !important;
+    }
+}
+
+@media (max-width: 425px) {
+    .MainHeader {
+        padding: 0 2rem;
+    }
+}

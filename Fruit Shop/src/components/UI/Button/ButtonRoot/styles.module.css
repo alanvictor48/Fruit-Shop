@@ -1,0 +1,20 @@
+.ButtonRoot {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+
+    border: 1px solid var(--main-orange);
+
+    padding: .5rem 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--main-green);
+}
+
+.ButtonRoot:hover {
+    background-color: var(--main-orange);
+    border: 1px solid var(--main-orange);
+
+    color: white;
+}

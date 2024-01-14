@@ -1,0 +1,26 @@
+[
+    {
+        "_id": 1,
+        "category": 2,
+        "name": "Laranja",
+        "description": "Esta laranja não é apenas uma fonte de prazer para o seu paladar, mas também um presente para a sua saúde. Rica em vitamina C, ela nutre seu corpo enquanto você desfruta da experiência deliciosa. Seja como um lanche revigorante, uma sobremesa natural ou uma adição refrescante a uma salada, esta laranja doce é a escolha perfeita para quem busca qualidade, sabor e bem-estar.",
+        "price": 4.5,
+        "image_url": "https://villalvafrutas.com.br/wp-content/uploads/2017/08/155.6.546.444994-870x500.jpg"
+    },
+    {
+        "_id": 2,
+        "category": 2,
+        "name": "Maçã",
+        "description": "Além do prazer indescritível que cada mordida oferece, esta maçã suculenta é um presente para a sua saúde. Rica em fibras e nutrientes essenciais, ela não só satisfaz seus desejos como também contribui para o seu bem-estar.",
+        "price": 2.5,
+        "image_url": "https://unimednordesters.com.br/media/15714/beneficios-da-maca.jpeg"
+    },
+    {
+        "_id": 3,
+        "category": 1,
+        "name": "Pepino",
+        "description": "Com baixo teor calórico e rico em água, é uma escolha inteligente para manter-se hidratado e nutrido. Adicione-o às suas saladas, faça um snack saudável ou até mesmo utilize em preparações culinárias criativas.",
+        "price": 3.5,
+        "image_url": "https://ceagesp.gov.br/wp-content/uploads/2015/12/pepino_comum-412x322.jpg"
+    }
+]

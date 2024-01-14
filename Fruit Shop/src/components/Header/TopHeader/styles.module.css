@@ -1,0 +1,41 @@
+.TopHeader {
+    padding: 0 8rem;
+    min-height: 50px;
+    background-color: white;
+
+    transition: all 1s ease;
+}
+
+.TopHeader ul {
+    display: flex;
+    gap: 1rem;
+
+    color: #f1f1f1;
+    padding: 0;
+    list-style: none;
+}
+
+.TopHeader a {
+    color: inherit;
+}
+
+.TopHeader a:hover {
+    color: var(--main-orange);
+}
+
+.TopHeader .container {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 0 2rem;
+    font-size: 1.4rem;
+
+    background-color: var(--main-green);
+    border-radius: 50px 20px;
+}
+
+@media (max-width: 830px) {
+    .TopHeader {
+        display: none;
+    }
+}
