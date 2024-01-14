@@ -1,19 +1,19 @@
 // import axios from "./axios";
 
 import { Fruit } from "@/models/interfaces/fruit"
-import fruits from './Mock/fruits.json';
-import { categoriesMap } from "./categories";
+// import fruits from './Mock/fruits.json';
+// import { categoriesMap } from "./categories";
 import axios from "./axios";
 
-const fruitsFetched: Fruit[] = fruits.map((fruit: any) => {
-    return {
-        ...fruit,
-        category: {
-            _id: fruit.category,
-            name: categoriesMap.get(fruit.category)
-        }
-    }
-})
+// const fruitsFetched: Fruit[] = fruits.map((fruit: any) => {
+//     return {
+//         ...fruit,
+//         category: {
+//             _id: fruit.category,
+//             name: categoriesMap.get(fruit.category)
+//         }
+//     }
+// })
 
 interface FruitFetched extends Omit<Fruit, 'price'> {
     price: string
