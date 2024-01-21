@@ -8,6 +8,10 @@ import 'swiper/css/pagination';
 
 import StarIcon from '@/assets/icons/star.svg?react';
 
+import ron_url from '@/assets/images/Ron.jpg';
+import hermione_url from '@/assets/images/hermione.jpg';
+import harry_url from '@/assets/images/harry.jpg';
+
 function Testimonials() {
     return (
         <div className={styles.Testimonials}>
@@ -34,7 +38,7 @@ function Testimonials() {
                 className={styles.mySwiper}>
                 <SwiperSlide>
                     <Testimonial
-                        photo='./src/assets/images/Ron.jpg'
+                        photo={ron_url}
                         description='Lorem Ipsum is simply dummy text of the printing Ipsum has been the industrys standard dummy text ever since the 1500s'
                         name='Ron Weasley'
                         role='Wizard'
@@ -43,7 +47,7 @@ function Testimonials() {
                 </SwiperSlide>
                 <SwiperSlide>
                     <Testimonial
-                        photo='./src/assets/images/harry.jpg'
+                        photo={harry_url}
                         description='Lorem Ipsum is simply dummy text of the printing Ipsum has been the industrys standard dummy text ever since the 1500s'
                         name='Harry Potter'
                         role='Wizard'
@@ -52,7 +56,7 @@ function Testimonials() {
                 </SwiperSlide>
                 <SwiperSlide>
                     <Testimonial
-                        photo='./src/assets/images/hermione.jpg'
+                        photo={hermione_url}
                         description='Lorem Ipsum is simply dummy text of the printing Ipsum has been the industrys standard dummy text ever since the 1500s'
                         name='Hermione Granger'
                         role='Wizard'

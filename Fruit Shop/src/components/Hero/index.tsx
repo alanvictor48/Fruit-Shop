@@ -7,6 +7,9 @@ import 'swiper/css/pagination';
 
 import { Autoplay, Pagination } from 'swiper/modules';
 
+import fruit1_url from '@/assets/images/fruit.jpg';
+import fruit2_url from '@/assets/images/fruit2.jpg';
+
 function Hero() {
     return (
         <div className={styles.Hero}>
@@ -27,8 +30,8 @@ function Hero() {
                     }}
                     modules={[Autoplay, Pagination]}
                     className={styles.mySwiper}>
-                        <SwiperSlide><img src="./src/assets/images/fruit.jpg" alt="" /></SwiperSlide>
-                        <SwiperSlide><img src="./src/assets/images/fruit2.jpg" alt="" /></SwiperSlide>
+                        <SwiperSlide><img src={fruit1_url} alt="" /></SwiperSlide>
+                        <SwiperSlide><img src={fruit2_url} alt="" /></SwiperSlide>
                 </Swiper>
             </aside>
         </div>

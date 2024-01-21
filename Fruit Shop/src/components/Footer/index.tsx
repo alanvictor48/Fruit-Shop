@@ -6,6 +6,8 @@ import YoutubeIcon from '@/assets/icons/youtube.svg?react';
 import LinkedinIcon from '@/assets/icons/linkedin.svg?react';
 
 import CopyrightIcon from '@/assets/icons/copyright.svg?react';
+import payment_img_url from "@/assets/images/payments.png"
+
 import { Button } from '../UI/Button';
 import { Link } from 'react-router-dom';
 
@@ -57,7 +59,7 @@ function Footer() {
                     <Link to='/'>+0123 4567 8910</Link>
                     <span>Payment Acepted</span>
                     <div className={styles.payments}>
-                        <img src="./src/assets/images/payments.png" alt="" />
+                        <img src={payment_img_url} alt="" />
                     </div>
                 </div>
             </section>
